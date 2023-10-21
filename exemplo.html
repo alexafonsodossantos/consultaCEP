@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-12">
+                    <h1>Consultar CEP</h1>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">CEP</h5>
+                            <input type="number" class="form-control" placeholder="Digite o CEP" id="cep">
+                            <br>
+                            <br>
+                            <button onClick="teste()" class="btn btn-primary" >Consultar</button>
+        
+                      <button onClick="limpar()" class="btn btn-danger" >Limpar</button>
+
+        
+                      <div id="resultado" style="display: none;">
+                        <br>
+                        <h4>Resultado</h4>
+                    <table class="table">
+                        <tr>
+                            <td>Rua:</td>      <td id="rua"></td>
+                        </tr>
+                        <tr>
+                            <td>Bairro:</td>   <td id="bairro"></td>
+                        </tr>
+                        <tr>
+                            <td>Cidade:</td>   <td id="cidade"></td>
+                        </tr>
+                        <tr>
+                            <td>Estado:</td>   <td id="estado"></td>
+                        </tr>
+                    </table>
+            
+            
+                    <div style="overflow:hidden;max-width:100%;height:500px;"><div id="g-mapdisplay" style="height:100%; width:100%;max-width:100%;"><iframe id="mapa" style="height:100%;width:100%;border:0;" frameborder="0" src=""></iframe></div><a class="embed-map-html" href="https://www.bootstrapskins.com/themes" id="authmaps-data">premium bootstrap themes</a><style>#g-mapdisplay img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div>
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+                  </div>
+            
+                  
+               
+                  
+            
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="funcoes.js" ></script>
+</html>
